@@ -15,5 +15,3 @@ Thumbs.db
 
 #Vim temporary files backups/undo history etc.
 .viminfo
-vim/.vim/undo
-vim/.vim/backup
