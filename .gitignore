@@ -12,6 +12,8 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
-.vim/backup
-.vim/backups
+
+#Vim temporary files backups/undo history etc.
 .viminfo
+vim/.vim/backups
+vim/.vim/backup
