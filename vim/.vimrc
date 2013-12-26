@@ -57,8 +57,8 @@ set directory=~/.vim/temp
 " Only works all the time.
 "
 if has('persistent_undo')
-  silent !mkdir ~/.vim/backups > /dev/null 2>&1
-  set undodir=~/.vim/backups
+  silent !mkdir ~/.vim/undo > /dev/null 2>&1
+  set undodir=~/.vim/undo
   set undofile
 endif
 
