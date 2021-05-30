@@ -1,0 +1,46 @@
+#Android sdk 2013/11/10
+export PATH=$HOME/Applications/android-sdk-macosx/tools:$HOME/Applications/android-sdk-macosx/platform-tools:$PATH
+
+#Apache ANT
+export PATH=$HOME/Applications/apache-ant/bin:$PATH
+
+#Apache maven
+export PATH=$HOME/Applications/apache-maven/bin:$PATH
+export M2_HOME=$HOME/Applications/apache-maven
+
+#Gradle
+export PATH=$HOME/Applications/gradle/bin:$PATH
+
+#Android home
+export ANDROID_HOME=$HOME/Applications/adt/sdk
+
+#Gradle home
+#export GRADLE_HOME=$HOME/Applications/gradle
+
+#mongo db
+export PATH=$HOME/Applications/mongodb/bin:$PATH
+
+#fix for homebrew: prioritises homebrew version of native installed version
+export PATH=/usr/local/bin:$PATH
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+
+#JAVA HOME / Options
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128M"
+#Amazon Corretto 11 JVM HOME
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
+
+### alias
+alias please='sudo $(history -p \!\!)'
+
+alias srv1='ssh -L:8112:localhost:8112 yourserver1.com -p 222'
+alias srv1ssl='ssh -L:4443:192.168.11.1:443 yourserver1.com -p 222'
+alias srv2='ssh -L:8112:localhost:8112 yourserver2.com -p 2222'
+alias ll='ls -alh'
+alias lsr='ls -altr'
+alias lss='ls -alr'
+
+export HOMEBREW_GITHUB_API_TOKEN=<<YOURAPITOKEN>>
